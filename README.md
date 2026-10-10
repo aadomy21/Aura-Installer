@@ -8,9 +8,9 @@ AURA AI is a Windows desktop assistant with a quick-access overlay, AI chat, and
 2. Download and run **`AURA-Setup.exe`** from the latest release.
 3. Follow the setup instructions and enter your own Ollama Cloud API key when prompted.
 
-You only need to download **`AURA-Setup.exe`** to install the app. Setup downloads and verifies the app runtime during installation, so you do not need to manually download or open `AURA_Runtime.zip`. An internet connection is required during setup.
+You only need to download **`AURA-Setup.exe`** to install the app. Setup downloads and verifies the app runtime during installation
 
-AURA requires your own Ollama Cloud API key for cloud AI features. Setup stores the key in Windows Credential Manager; it is not included with the download.
+AURA requires your own Ollama Cloud API key for cloud AI features. Setup stores the key in Windows Credential Manager; it is not included with the download. You get the ollama cloud api key from [Here](https://ollama.com/settings/keys) **DONT SHARE IT OR ELSE YOUR APP WILL BE SLOWER**
 
 ## Optional offline AI
 
@@ -29,9 +29,7 @@ The browser extension is optional and is not installed automatically. To add it:
 The Releases page may include:
 
 - **`AURA-Setup.exe`** — Installer to download and run.
-- **`AURA_Runtime.zip`** — App files downloaded by setup; keep it attached to the same release.
 - **`AURA_Browser_Extension.zip`** — Optional browser extension.
-- **`SHA256SUMS.txt`** — Checksums used to verify release downloads.
 - **`README.txt`** — Release-specific installation notes.
 
 ## Updates
