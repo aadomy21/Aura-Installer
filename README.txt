@@ -1,29 +1,39 @@
-AURA AI — Windows release package
+# AURA AI
 
-Install:
-1. Download and run AURA-Setup.exe on Windows 10/11, 64-bit.
-2. Enter your own Ollama Cloud API key. It is saved in Windows Credential
-   Manager on this PC; it is not included in this download.
-3. Optionally select Offline AI. Setup installs Ollama with Windows Package
-   Manager and downloads the chosen Qwen 2.5 VL model. Model-size and RAM
-   figures shown by setup are estimates. Ensure you have enough free disk
-   space and memory before selecting a model.
+AURA AI is a Windows desktop assistant with a quick-access overlay, AI chat, and a browser extension for supported Chromium browsers.
 
-Offline AI requires an internet connection during the initial Ollama/model
-download. After installation, local inference can run without internet.
-Cloud AI and automatic updates require internet. The Cloud API key is required
-by this release even when Offline AI is selected.
+## Download and install
 
-The installer contains the packaged AURA application and browser extension,
-not the project source tree. The browser extension is separately installable:
-extract AURA_Browser_Extension.zip, open your Chromium browser's extensions
-page, enable Developer mode, choose Load unpacked, and select the extracted
-folder. Pair it through AURA Settings.
+1. Open the [AURA AI Releases](https://github.com/aadomy21/Aura-Installer/releases) page.
+2. Download and run **`AURA-Setup.exe`** from the latest release.
+3. Follow the setup instructions and enter your own Ollama Cloud API key when prompted.
 
-Updates are not automatic in this initial package. Download and run the next
-official AURA-Setup.exe release to update the installed application. Your
-AURA settings and chat history are stored separately from the program files.
+You only need to download **`AURA-Setup.exe`** to install the app. Setup downloads and verifies the app runtime during installation, so you do not need to manually download or open `AURA_Runtime.zip`. An internet connection is required during setup.
 
-Only download these files from the official AURA release page. Check
-SHA256SUMS.txt when hashes are provided. No API key is included in the
-installer or this release package.
+AURA requires your own Ollama Cloud API key for cloud AI features. Setup stores the key in Windows Credential Manager; it is not included with the download.
+
+## Optional offline AI
+
+During setup, you can optionally install Ollama and download a local AI model. This requires additional disk space, memory, and an internet connection for the initial downloads. You can skip this option and use cloud AI.
+
+## Browser extension
+
+The browser extension is optional and is not installed automatically. To add it:
+
+1. Download `AURA_Browser_Extension.zip` from the same release and extract it.
+2. Open your Chromium browser’s extensions page, enable **Developer mode**, and select **Load unpacked**.
+3. Choose the extracted extension folder and pair it through AURA Settings.
+
+## Release files
+
+The Releases page may include:
+
+- **`AURA-Setup.exe`** — Installer to download and run.
+- **`AURA_Runtime.zip`** — App files downloaded by setup; keep it attached to the same release.
+- **`AURA_Browser_Extension.zip`** — Optional browser extension.
+- **`SHA256SUMS.txt`** — Checksums used to verify release downloads.
+- **`README.txt`** — Release-specific installation notes.
+
+## Updates
+
+AURA checks for newer releases and prompts before installing an update. Updates require an internet connection.
